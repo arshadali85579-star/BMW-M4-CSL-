@@ -27,3 +27,8 @@ Thumbs.db
 
 # Local zip packages
 *.zip
+
+# Backup models
+.backup_model/
+*.backup*
+

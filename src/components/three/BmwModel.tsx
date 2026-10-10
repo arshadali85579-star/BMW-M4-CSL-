@@ -61,7 +61,7 @@ export const BmwModel: React.FC<BmwModelProps> = ({
   reducedMotion = false,
   onLoaded
 }) => {
-  const gltf = useGLTF('/models/bmw_m4csl.glb');
+  const gltf = useGLTF('/models/bmw_m4csl.glb', true);
   const groupRef = useRef<THREE.Group>(null);
 
   // Clone scene once to avoid multi-render mutation conflicts
@@ -402,4 +402,4 @@ export const BmwModel: React.FC<BmwModelProps> = ({
   );
 };
 
-useGLTF.preload('/models/bmw_m4csl.glb');
+useGLTF.preload('/models/bmw_m4csl.glb', true);
