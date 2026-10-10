@@ -116,7 +116,8 @@ if %errorlevel% neq 0 (
 :: 10. Push commit to GitHub
 echo.
 echo Pushing to GitHub (origin !CURRENT_BRANCH!)...
-git push -u origin !CURRENT_BRANCH!
+echo [NOTE] Uploading files (including the 67 MB 3D car model). Please wait, this may take 20-40 seconds...
+git push -u origin !CURRENT_BRANCH! --progress
 if %errorlevel% neq 0 (
     echo.
     echo ===================================================================
