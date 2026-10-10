@@ -32,3 +32,6 @@ Thumbs.db
 .backup_model/
 *.backup*
 
+# Local batch scripts
+*.bat
+
